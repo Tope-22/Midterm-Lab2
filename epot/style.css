@@ -1,0 +1,120 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-top: 56px;
+}
+
+section {
+    scroll-margin-top: 70px;
+}
+
+
+/* HERO */
+
+.hero {
+    background: linear-gradient(135deg, #111, #222);
+    color: white;
+}
+
+.hero .carousel img {
+    height: 450px;
+    object-fit: cover;
+}
+
+
+/* GALLERY */
+
+.gallery-card {
+    border: 0;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.gallery-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(0,0,0,.15) !important;
+}
+
+.gallery-card img {
+    height: 220px;
+    object-fit: cover;
+    transition: .4s;
+}
+
+.gallery-card:hover img {
+    transform: scale(1.05);
+}
+
+
+/* NAV PILLS */
+
+.nav-pills .nav-link {
+    color: #212529;
+    margin: 4px;
+    border-radius: 50px;
+}
+
+.nav-pills .nav-link.active {
+    background: #212529;
+}
+
+
+/* CATEGORY */
+
+.category-card {
+    transition: .3s;
+}
+
+.category-card:hover {
+    transform: translateY(-7px);
+}
+
+
+/* PROGRESS */
+
+.progress {
+    height: 10px;
+    border-radius: 20px;
+}
+
+
+/* MODAL */
+
+.modal-content {
+    border: 0;
+    border-radius: 15px;
+}
+
+.modal-body img {
+    max-height: 600px;
+    object-fit: cover;
+}
+
+
+/* FOOTER */
+
+footer {
+    margin-top: 0;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .hero {
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero .carousel img {
+        height: 300px;
+    }
+
+}
